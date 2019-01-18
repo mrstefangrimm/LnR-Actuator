@@ -1,2 +1,2 @@
 # LnR-Actuator
-The linear and rotary actuator allows linear as well as rotary motion of the shaft.
+The linear and rotational (LnR) actuator allows linear as well as rotational motion of the shaft.
