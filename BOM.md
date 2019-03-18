@@ -7,10 +7,8 @@ Anz. | Beschreibung
 1 | Stahl Rundprofil d4 x 12
 1 | Holz Rundprofil d6 x 120
 11 | M2 x 10 Universal Senkkopfschraube mit S-Spitze
-1 | M4 x 20 Senkkopfschraube
-1 | M3 x 10 Zylinderkopfschraube
 4 | M4 Unterlagsscheibe
-4 | M4 Mutter
+6 | M4 Mutter
 2 | Seegerring d4
 1 | Bueroklammer d1
 1 | LnR-ChassisLinks oder LnR-ChassisRechts
