@@ -1,5 +1,5 @@
 # LnR-Actuator
-The linear and rotary (LnR) actuator electromechanical device that allows linear as well as rotary motion of the shaft.
+The linear and rotary (LnR) actuator is a electromechanical device that allows linear as well as rotary motion of the shaft.
 
 ## Project History
 A first revision was released in 2018. The construction has been simplified and made stiffer since then. All *[released revisions](https://github.com/mrstefangrimm/LnR-Actuator/releases)* are mechanical compatible. 
