@@ -7,9 +7,11 @@ A first revision was released in 2018. The construction has been simplified and 
 ## Construction
 A detailed description how to build a LnR-Actuator can be found on *[instructables](https://www.instructables.com/id/Linear-and-Rotation-Actuator/)*.
 
-## Examples
+## Reference Projects
  - *[GRIS5A Motion Phantom](https://github.com/mrstefangrimm/GRIS5A)*
  - *[No2 Motion Phantom](https://github.com/mrstefangrimm/No2)*
 
 ## License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
