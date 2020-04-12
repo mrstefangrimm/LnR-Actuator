@@ -5,9 +5,17 @@ The linear and rotary (LnR) actuator is a electromechanical device that allows l
 A first revision was released in 2018. The construction has been simplified and made stiffer since then. All *[released revisions](https://github.com/mrstefangrimm/LnR-Actuator/releases)* are mechanical compatible. 
 
 ## Construction
-A detailed description how to build a LnR-Actuator can be found on *[instructables](https://www.instructables.com/id/Linear-and-Rotation-Actuator/)*.
+A detailed description how to build a LnR-Actuator is published on *[Instructables.com](https://www.instructables.com/id/Linear-and-Rotation-Actuator/)*.
+
+## Tool Chain
+
+| Software       | License       |
+| -------------- | ------------- |
+| SketchUp       | SketchUp Shop |
+| Ultimaker Cura | GPL           |
 
 ## Reference Projects
+
  - *[GRIS5A Motion Phantom](https://github.com/mrstefangrimm/GRIS5A)*
  - *[No2 Motion Phantom](https://github.com/mrstefangrimm/No2)*
 
