@@ -7,7 +7,7 @@ A first revision was released in 2018. The construction has been simplified and 
 ## Construction
 A detailed description how to build a LnR-Actuator is published on *[Instructables.com](https://www.instructables.com/id/Linear-and-Rotation-Actuator/)*.
 
-## Tool Chain
+## Manufacturing Tool Chain
 
 | Software       | License       |
 | -------------- | ------------- |
@@ -16,8 +16,8 @@ A detailed description how to build a LnR-Actuator is published on *[Instructabl
 
 ## Reference Projects
 
- - *[GRIS5A Motion Phantom](https://github.com/mrstefangrimm/GRIS5A)*
- - *[No2 Motion Phantom](https://github.com/mrstefangrimm/No2)*
+ - *[Marker Motion X-Ray Imaging Phantom](https://github.com/mrstefangrimm/GRIS5A)*
+ - *[Liver Deformation X-Ray Imaging Phantom](https://github.com/mrstefangrimm/No2)*
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
