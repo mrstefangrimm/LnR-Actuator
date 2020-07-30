@@ -18,6 +18,7 @@ A detailed description how to build a LnR-Actuator is published on *[Instructabl
 
  - *[Marker Motion X-Ray Imaging Phantom](https://github.com/mrstefangrimm/GRIS5A)*
  - *[Liver Deformation X-Ray Imaging Phantom](https://github.com/mrstefangrimm/No2)*
+ - *[Lung Motion X-Ray Imaging Phantom](https://github.com/mrstefangrimm/No3)*
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
