@@ -10,7 +10,7 @@ The Linear and Rotary (LnR) actuator is a linear servo with a rotatable shaft. T
 
 To get an idea, check out the [3D model of the LnR Actuator](https://mrstefangrimm.github.io/). With the two sliders on the right you can simulate longitudinal and rotational motion.
 
-The used motors are two commercially available servo motors. Beside the low price, servos have a useful characteristic: Servos have already the control logic integrated to be  positioned absolutely. Additional position read-out modules are therefore not required.
+The used motors are two commercially available servo motors. Beside the low price, servos have a useful characteristic: Servos have already integrated control logic in order to be absolutely positioned. Additional position read-out modules are therefore not required.
 
 To  build it you need a lathe and metal drills (4.1 and 3.3 mm) to manufacture the sleeve bearings. A turning tool to create the snap ring notch is also required. Further you need a M4 screw tap and a M4 thread cutter.
 
@@ -65,7 +65,7 @@ The direct material costs are approximately USD 30.
 
  1 3D Printer
 
- 21g PLA filament
+ 105g PLA filament
 
  1 Lathe machine
 
@@ -159,7 +159,7 @@ Put all the components together and add the snap ring for fixation.
 
 ![LnR2-CoverMounted](LnR2-CoverMounted.jpg)
 
-Position the servo motor to middle position and mount the servo arm to the servo motor. Move the slider to the position where bore of the extension arm matches with the bore of the slider. Attach the extension arm with the 12 mm long metal rod and mount the slider cover with two M2 screws.
+Position the servo motor to middle position and mount the servo arm to the servo motor. Move the slider to the position where bore of the extension arm matches with the bore of the slider. Attach the extension arm with the 12 mm long metal rod and mount the slider's lid with two M2 screws.
 
 Mount the cover to the base component with six M2 screws.
 
