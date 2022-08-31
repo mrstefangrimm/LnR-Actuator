@@ -46,7 +46,7 @@ Legend: l:length in millimeters, d:diameter in millimeters
 
 You either need to print the left-sided or  right-sided parts. The pictures in this Instructable show a left-sided  LnR Actuator (Looking from the front, the wooden rod is on the left  side).
 
-You may use PLA with 20% infill. If you do not have a 3D printer, I recommend looking for a 3D printing service nearby.
+You can use PLA with 20% infill. If you do not have a 3D printer, I recommend looking for a 3D printing service nearby.
 
 ## Step 2: Slider Bearings
 
