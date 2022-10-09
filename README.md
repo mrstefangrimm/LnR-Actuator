@@ -5,7 +5,7 @@ The linear and rotary (LnR) actuator is a electromechanical device that allows l
 A first revision was released in 2018. The construction has been simplified and made stiffer since then. All *[released revisions](https://github.com/mrstefangrimm/LnR-Actuator/releases)* are mechanical compatible. 
 
 ## Construction
-A detailed description how to build a LnR-Actuator is published on *[Instructables.com](https://www.instructables.com/id/Linear-and-Rotation-Actuator/)*.
+A detailed description how to build a LnR-Actuator is published on *[Instructables.com](https://www.instructables.com/id/Linear-and-Rotation-Actuator/)* and [instructions for rev. 4 with brass bearings](https://www.instructables.com/Linear-and-Rotary-Actuator-With-Brass-Bearings/). 
 
 ## Manufacturing Tool Chain
 
