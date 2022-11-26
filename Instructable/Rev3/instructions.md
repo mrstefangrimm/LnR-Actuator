@@ -48,27 +48,27 @@ You either need to print the left-sided or  right-sided parts. The pictures in t
 
 You can use PLA with 20% infill. If you do not have a 3D printer, I recommend looking for a 3D printing service nearby.
 
-## Step 2: Slider Bearings
+## Step 2: Carriage Bearings
 
-![Step2-Slider](Step2-Slider.jpg)
+![Step2-Carriage](Step2-Carriage.jpg)
 
-As bearings, the M4 nuts are used! For that,  you drill out the (M4/3.3 mm) holes with the 4.2 mm metal drill. Press  the drilled out M4 nuts into the openings in the slider.
+As bearings, the M4 nuts are used! For that,  you drill out the (M4/3.3 mm) holes with the 4.2 mm metal drill. Press  the drilled out M4 nuts into the openings in the carriage.
 
-Glue 2 M4 washers onto the slider and the slider top.
+Glue 2 M4 washers onto the carriage and the carriage lid.
 
 ## Step 3: Mirco Servo and Extension Arm
 
 ![Step3-ServoArmExtension](Step3-ServoArmExtension.jpg)
 
-Mount the Micro Servo onto the slider.
+Mount the Micro Servo onto the carriage.
 
 On the right side you see the extension arm and the remaining 2 M4 nuts.  Press the drilled out M4 nuts into the openings of the extension arm.
 
-## Step 4: Slider and Rotatable Shaft
+## Step 4: Carriage and Rotatable Shaft
 
 ![Step4-Shaft](Step4-Shaft.jpg)
 
-Assemble slider, extension arm and slider top. Use the small 12 mm long metal rod as the axis.
+Assemble carriage, extension arm and carriage lid. Use the small 12 mm long metal rod as the axis.
 
 At the bottom of the picture you see the flange that is attached to the Micro Servo arm.
 
@@ -108,7 +108,7 @@ The mounting screws go into the messing sleeves first, then through the holes in
 
 With the M4 screw tap you cut a thread into the 3.3 mm holes of the back plane of the LnR-Base.
 
-The slider move on the two metal rods. These are pushed through the 4.2 mm  front  holes of the LnR-Base, then through the slider bearings and  fixated with the M4 thread in the back plane of the actuator.
+The carriage moves on the two metal rods. These rods are pushed through the 4.2 mm  front  holes of the LnR-Base, then through the carriage's bearings and  fixated with the M4 thread in the rear plane of the actuator.
 
 ## Step 8: Cover
 
@@ -132,13 +132,13 @@ It is important that you take the 5 Volts from the Arduino for the  potentiomete
 
 https://www.youtube.com/embed/KJdUGMOCTKk?feature=oembed&autoplay=1
 
-This is how I cancel systematic errors in the  software that controls the LnR Actuator. By eliminating the positioning  error due to mechanical transformation and due to mechanical play, a  positioning accuracy of 0.5 millimeters in longitudinal direction and 1  degrees in rotary motion is possible.
+This is how I cancel systematic errors in the  software that controls the LnR Actuator. By eliminating the positioning  error due to mechanical transformation and due to mechanical play, a  positioning accuracy of 0.5 millimeters in longitudinal direction and 1 degree in rotary motion is possible.
 
 Mechanical transformation: Arduinos map function [5] can be written as: *f(x) = a + bx*. For the demo data set [6], the maximum deviation is 1.9 mm. This means  at some point, the position of the actuator is almost 2 millimeters away from the measured value. 
 
 With a polynomial with a degree of 3, *f(x) = a + bx + cx^2 + dx^3*, the maximum deviation for the demo data is 0.3 millimeters; 6 times  more accurate. To determine the parameters a, b, c and d, you have to  measure at least 5 points. The demo data set has more than 5 measurement points, but 5 are sufficient. 
 
-Mechanical play:  Due to  the mechanical play, there is an offset (called backlash) in the position if you move the  actuator first forwards and then backwards, or if you move it clockwise  and then counter clockwise. In the longitudinal direction, the actuator  has mechanical play in the two joints between the servo arm and the  slider. For the rotary motion, the actuator has mechanical play between  the slider and the shafts. The servo motors have also some mechanical  play themselves. 
+Mechanical play:  Due to  the mechanical play, there is an offset (called backlash) in the position if you move the  actuator first forwards and then backwards, or if you move it clockwise  and then counter clockwise. In the longitudinal direction, the actuator  has mechanical play in the two joints between the servo arm and the  carriage. For the rotary motion, the actuator has mechanical play between  the carriage and the shafts. The servo motors have also some mechanical  play themselves. 
 To cancel the mechanical play, the rules are: 
   A) When moving forwards or clockwise, the formula is: *f(x) = P(x)*
   B) When moving backwards or counter clockwise, the formula is: *f(x) = P(x) + O(x)*

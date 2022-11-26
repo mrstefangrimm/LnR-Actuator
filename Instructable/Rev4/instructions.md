@@ -79,19 +79,19 @@ You can use PLA with 20% infill. If you do not have a 3D printer, I recommend lo
 
 ## Step 2: Rotary Drive
 
-![LnR-AssembleSliderLeft](LnR-AssembleSliderLeft.png)
+![LnR-AssembleCarriageLeft](LnR-AssembleCarriageLeft.png)
 
-![LnR2-SliderParts](LnR2-SliderParts.jpg)
+![LnR2-CarriageParts](LnR2-CarriageParts.jpg)
 
-![LnR2-SliderAssembled](LnR2-SliderAssembled.jpg)
+![LnR2-CarriageAssembled](LnR2-CarriageAssembled.jpg)
 
-![LnR2-SliderAssembled2](LnR2-SliderAssembled2.jpg)
+![LnR2-CarriageAssembled2](LnR2-CarriageAssembled2.jpg)
 
-Press the 4 mm long brass sleeves into the printed slider component. This is best done in a vice. Mount the micro servo with the supplied screws.
+Press the 4 mm long brass sleeves into the printed carriage component. This is best done in a vice. Mount the micro servo with the supplied screws.
 
 Use 2 M2 screws to attach the supplied servo cross arm to the printed flange.
 
-Glue 2 M4 washers onto the slider and the slider cover.
+Glue 2 M4 washers onto the carriage and the carriage lid.
 
 
 
@@ -105,7 +105,7 @@ Glue 2 M4 washers onto the slider and the slider cover.
 
 ![LnR2-BaseServoMounted](LnR2-BaseServoMounted.jpg)
 
-Press the 8 mm long brass sleeves into the printed base component. This is best done in a vice. The plain sleeves are mounted to the front and the threaded sleeves are mounted to the back side.
+Press the 8 mm long brass sleeves into the printed base component. This is best done in a vice. The plain sleeves are mounted to the front and the threaded sleeves are mounted to the rear plane.
 
 Attach the standard servo motor the the printed base component. In order to bring the servo through the opening, you need to  remove its bottom cap and bend the cable down. As shown in the picture, the cable of the micro servo has to go through the intended opening first. For fastening the servo motor, use supplied screws and brass hulls and the two printed servo fixation blocks.
 
@@ -121,7 +121,7 @@ Attach the standard servo motor the the printed base component. In order to brin
 
 ![LnR2-ShaftsMounted](LnR2-ShaftsMounted.jpg)
 
-Slide the metal shafts from the front through the sleeve bearings of the base component and the slider component. Then screw the shafts into the threaded sleeves on back side of the base component.
+Slide the metal shafts from the front through the sleeve bearings of the base component and the carriage component. Then screw the shafts into the threaded sleeves on rear plane of the base component.
 
 Attach the wooden rod the flange with a M2 screw. Drill a 1.5 mm hole into the wooden rod where the screw goes through, otherwise the wood will break.
 
@@ -159,7 +159,7 @@ Put all the components together and add the snap ring for fixation.
 
 ![LnR2-CoverMounted](LnR2-CoverMounted.jpg)
 
-Position the servo motor to middle position and mount the servo arm to the servo motor. Move the slider to the position where bore of the extension arm matches with the bore of the slider. Attach the extension arm with the 12 mm long metal rod and mount the slider's lid with two M2 screws.
+Position the servo motor to middle position and mount the servo arm to the servo motor. Move the carriage to the position where bore of the extension arm matches with the bore of the carriage. Attach the extension arm with the 12 mm long metal rod and mount the carriage's lid with two M2 screws.
 
 Mount the cover to the base component with six M2 screws.
 
