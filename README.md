@@ -14,6 +14,21 @@ A detailed description how to build a LnR-Actuator is published on *[Instructabl
 | SketchUp       | SketchUp Shop |
 | Ultimaker Cura | GPL           |
 
+## Software Tool Chain
+
+| Application | License        |
+| ----------- | -------------- |
+| lnr         | Apache license |
+
+| Tool                | License            |
+| ------------------- | ------------------ |
+| Visual Studio Code  | Microsoft license  |
+
+| Library         | Licence           |
+| --------------- | ----------------- |
+| angular         | MIT license       |
+| Node.js         | MIT license       |
+
 ## Reference Projects
 
  - *[Marker Motion X-Ray Imaging Phantom](https://github.com/mrstefangrimm/GRIS5A)*
