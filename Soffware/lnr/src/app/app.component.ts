@@ -4,11 +4,12 @@ import { LnrEngine3dService } from './lnrengine3d.service'
 import { LnrService } from './lnr.service'
 import { Vector3 } from 'three'
 import { CommonModule } from '@angular/common'
+import { OverlaybuttonComponent, OverlaybuttonClickArgs } from 'overlaybutton'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, OverlaybuttonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -40,6 +41,12 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnDestroy(): void {
     console.info(AppComponent.name, "ngOnDestroy")
     this.engine3d.ngOnDestroy()
+  }
+
+  onOverlayButtonClick(args: OverlaybuttonClickArgs): void {
+    console.info(AppComponent.name, "onOverlayButtonClick", args.open)
+
+    this.context.visiblitiesOpen = args.open
   }
  
   onLngChanged(event) {

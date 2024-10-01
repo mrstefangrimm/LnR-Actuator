@@ -2,24 +2,8 @@
 
   <main class="content">
 
-    <div class="menu">
-      <span class="menu-circle"></span>
-      <div class="menu-button"
-           (click)="context.visiblitiesOpen = !context.visiblitiesOpen">
-        <span class="menu-icon"
-              *ngIf="!context.visiblitiesOpen">
-          <span class="menu-line"></span>
-          <span class="menu-line menu-line-2"></span>
-          <span class="menu-line menu-line-3"></span>
-        </span>
-        <span class="menu-icon"
-              *ngIf="context.visiblitiesOpen">
-          <span class="menu-line menu-open-1"></span>
-          <span class="menu-line menu-line-2 menu-open-2"></span>
-          <span class="menu-line menu-line-3 menu-open-3"></span>
-        </span>
-      </div>
-    </div>
+    <lib-overlaybutton (notify)="onOverlayButtonClick($event)">
+    </lib-overlaybutton>
 
     <div class="menu-items"
          *ngIf="context.visiblitiesOpen">
