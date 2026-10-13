@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, OnInit, OnDestroy, AfterViewInit } from '@angular/core'
+import { Component, ViewChild, ElementRef, OnInit, OnDestroy, AfterViewInit, ChangeDetectionStrategy } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
 import { LnrEngine3dService } from './lnrengine3d.service'
 import { LnrService } from './lnr.service'
@@ -9,6 +9,7 @@ import { Vector3 } from 'three'
     selector: 'app-root',
     imports: [RouterOutlet],
     templateUrl: './app.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
