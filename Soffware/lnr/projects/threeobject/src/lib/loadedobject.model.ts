@@ -36,9 +36,9 @@ export interface LoadableObject {
   dispose()
 
   setLng(lng: number)
-  translate(value: Vector3)
-  setRtn(rtn: number)
+  translate(lng: Vector3)
 
+  setRtn(rtn: number)
   rotate(rtn: number, axis: Vector3)
 
   setVisible(show: boolean)
@@ -61,31 +61,34 @@ export class LoadedObject implements LoadableObject {
   private objectAsGroup: Group
 
   /** Creates a loadable object form a Sketchup model.
-   * 
+   *
    * @param origin to object axis from rotation axis.
    * @param position to object axis from model origin.
+   * @param material in use.
    */
   static createFromSketchup(origin: Vector3, position: Vector3, material: Material) : LoadableObject {
     return this.create(origin, this.sketchUpDirectionVector, position, material)
   }
 
   /** Creates a loadable object form a SCAD model.
-   * 
+   *
    * @param origin to object axis from rotation axis.
    * @param position to object axis from model origin.
+   * @param material in use.
    */
   static createFromScad(origin: Vector3, position: Vector3, material: Material) : LoadableObject {
     return this.create(origin, this.sketchUpDirectionVector, position, material)
   }
 
   /** Creates a loadable object.
-   * 
+   *
    * @param origin to object axis from rotation axis.
    * @param directionVector to worldSpaceDirectionVector [0, 0, 1] from directionVector.
    * @param position to object axis from model origin.
+   * @param material to be used.
    */
   static create(origin: Vector3, directionVector: Vector3, position: Vector3, material: Material) : LoadableObject {
-    var object = new LoadedObject()
+    const object = new LoadedObject();
     object.origin = origin
     object.directionVector = this.sketchUpDirectionVector
     object.position = position
@@ -157,8 +160,10 @@ export class LoadedObject implements LoadableObject {
     this.object.position.z = this.position.z + lng
   }
 
-  translate(value: Vector3) {
-    this.object.position.y = this.position.y + value.y
+  translate(lng: Vector3) {
+    this.object.position.x = this.position.x + lng.x
+    this.object.position.y = this.position.y + lng.y
+    this.object.position.z = this.position.z + lng.z
   }
 
   setRtn(rtn: number) {

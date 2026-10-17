@@ -5,7 +5,7 @@ export class LnrService {
 
   showAsTransparent = false
   showCover = false
-  visiblitiesOpen: boolean = false
+  visibilitiesOpen: boolean = false
 
   constructor() {
     console.info(LnrService.name, "c'tor")

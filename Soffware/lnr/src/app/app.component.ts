@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router'
 import { LnrEngine3dService } from './lnrengine3d.service'
 import { LnrService } from './lnr.service'
 import { Vector3 } from 'three'
+import {NgOptimizedImage} from '@angular/common';
 
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet],
+  imports: [RouterOutlet, NgOptimizedImage],
     templateUrl: './app.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './app.component.css'
@@ -20,7 +21,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
   constructor(
     public context: LnrService,
     private readonly engine3d: LnrEngine3dService) {
-    console.info(AppComponent.name, "c'tor")  
+    console.info(AppComponent.name, "c'tor")
   }
 
   ngOnInit(): void {
@@ -28,7 +29,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 
     console.debug(AppComponent.name, window.innerWidth, window.innerHeight)
 
-    const size = LnrEngine3dService.calcContentSize()  
+    const size = LnrEngine3dService.calcContentSize()
     this.engine3d.createScene(this.rendererCanvas, size.width, size.height)
     this.engine3d.animate()
   }
@@ -41,7 +42,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
     console.info(AppComponent.name, "ngOnDestroy")
     this.engine3d.ngOnDestroy()
   }
- 
+
   onLngChanged(event) {
     console.debug(event.value)
 

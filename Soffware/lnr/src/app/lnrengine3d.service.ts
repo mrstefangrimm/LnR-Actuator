@@ -9,7 +9,7 @@ import { Observable } from 'rxjs'
 export class LnrEngine3dService implements OnDestroy {
 
   private readonly zero: Vector3 = new Vector3(0, 0, 0)
-  
+
   private renderer: THREE.WebGLRenderer
   private camera: THREE.PerspectiveCamera
   private scene: THREE.Scene
@@ -44,7 +44,7 @@ export class LnrEngine3dService implements OnDestroy {
   groupRotationBlue: LoadableObject
   groupRotationSilver: LoadableObject
   groupExtensionArm: LoadableObject
-  
+
   public constructor(private ngZone: NgZone) {
     const baseUrl = document.getElementsByTagName('base')[0].href
     console.info(LnrEngine3dService.name, "c'tor", "base url", baseUrl)
@@ -98,10 +98,10 @@ export class LnrEngine3dService implements OnDestroy {
       antialias: true, // smooth edges
     });
     this.renderer.setSize(w, h)
- 
+
     // create the scene
-    this.scene = new THREE.Scene() 
- 
+    this.scene = new THREE.Scene()
+
     this.camera = new THREE.PerspectiveCamera(40, w / h, 0.1, 800)
     this.camera.position.set(100, 150, 100)
     this.scene.add(this.camera)
@@ -109,23 +109,23 @@ export class LnrEngine3dService implements OnDestroy {
     const controls = new OrbitControls(this.camera, this.renderer.domElement)
     controls.minDistance = 50
     controls.maxDistance = 500
-    
+
     const light = new THREE.PointLight(0xffffff, 10, 0, 0)
     light.position.set(300, -700, 0)
     this.scene.add(light)
-    
+
     const light2 = new THREE.PointLight(0xffffff, 10, 0, 0)
     light2.position.set(0, 500, 300)
     this.scene.add(light2)
 
-    var hemiLight = new THREE.HemisphereLight()
+    const hemiLight = new THREE.HemisphereLight();
     this.scene.add(hemiLight);
 
     this.materialBlue = new THREE.MeshStandardMaterial({
       color: new THREE.Color(0,0,255),
       roughness: 0.5,
       metalness: 0,
-    })   
+    })
     this.materialWhite = new THREE.MeshStandardMaterial({
       color: 0xFFFFFF,
       metalness: 0,
@@ -222,7 +222,7 @@ export class LnrEngine3dService implements OnDestroy {
 
   private loadInvisibleAndAdd(origin: Vector3, material: THREE.Material, asset: string) : Observable<LoadableObject> {
     return new Observable<LoadableObject>(subscriber => {
-      var model = LoadedObject.createFromSketchup(origin, this.zero, material)
+      const model = LoadedObject.createFromSketchup(origin, this.zero, material);
       model.loadInvisible(asset).subscribe({
         next: object3d => {
           this.scene.add(object3d)
@@ -238,7 +238,7 @@ export class LnrEngine3dService implements OnDestroy {
 
   private loadAndAdd(origin: Vector3, material: THREE.Material, asset: string) : Observable<LoadableObject> {
     return new Observable<LoadableObject>(subscriber => {
-      var model = LoadedObject.createFromSketchup(origin, this.zero, material)
+      const model = LoadedObject.createFromSketchup(origin, this.zero, material);
       model.load(asset).subscribe({
         next: object3d => {
           this.scene.add(object3d)
@@ -280,7 +280,7 @@ export class LnrEngine3dService implements OnDestroy {
 
   private resize() {
     const size = LnrEngine3dService.calcContentSize()
-   
+
     this.camera.aspect = size.width / size.height
     this.camera.updateProjectionMatrix()
 
@@ -289,12 +289,12 @@ export class LnrEngine3dService implements OnDestroy {
 
   static calcContentSize() : {width: number; height: number} {
 
-    const sideNavWidth = window.innerWidth > 620 
+    const sideNavWidth = window.innerWidth > 620
                          ? window.innerWidth * 0.2 + 14
                          : 18
     const contentWidth = window.innerWidth - sideNavWidth
 
-    const footerHeight = window.innerWidth > 620 
+    const footerHeight = window.innerWidth > 620
                          ? window.innerHeight * 0.1
                          :  window.innerHeight * 0.3
     const contentHeight = window.innerHeight - footerHeight
@@ -346,7 +346,7 @@ export class LnrEngine3dService implements OnDestroy {
       this.groupRotationSilver.setMaterial(this.materialSilver)
       this.groupExtensionArm.setMaterial(this.materialBlue)
     }
-  
+
   }
 
 }
