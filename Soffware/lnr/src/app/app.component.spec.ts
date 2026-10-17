@@ -51,9 +51,9 @@ describe('AppComponent', () => {
     const slider = compiled.querySelector('#Longitudinal') as HTMLInputElement;
     expect(slider).toBeTruthy();
     expect(slider.type).toBe('range');
-    expect(slider.min).toBe('20');
-    expect(slider.max).toBe('180');
-    expect(slider.value).toBe('180');
+    expect(slider.min).toBe('0');
+    expect(slider.max).toBe('255');
+    expect(slider.value).toBe('127');
   });
 
   it('should render the rotational slider with correct attributes', () => {
@@ -62,8 +62,8 @@ describe('AppComponent', () => {
     const slider = compiled.querySelector('#Rotational') as HTMLInputElement;
     expect(slider).toBeTruthy();
     expect(slider.type).toBe('range');
-    expect(slider.min).toBe('10');
-    expect(slider.max).toBe('170');
-    expect(slider.value).toBe('90');
+    expect(slider.min).toBe('0');
+    expect(slider.max).toBe('255');
+    expect(slider.value).toBe('127');
   });
 });
