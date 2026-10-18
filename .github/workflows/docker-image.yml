@@ -3,12 +3,12 @@ name: Docker build and push
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - 'Software/lnr/**'
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-push:
