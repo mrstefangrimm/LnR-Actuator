@@ -3,14 +3,14 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../out-tsc/lib",
-    "declaration": true,
-    "declarationMap": true,
-    "inlineSources": true,
-    "types": []
+    "outDir": "../../out-tsc/spec",
+    "rootDir": "./src",
+    "types": [
+      "vitest/globals"
+    ]
   },
-  "exclude": [
-    "**/*.spec.ts"
+  "include": [
+    "src/**/*.spec.ts"
   ],
   "angularCompilerOptions": {
     "extendedDiagnostics": {

@@ -3,14 +3,19 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../out-tsc/spec",
-    "types": [
-      "jasmine"
-    ]
+    "outDir": "../../out-tsc/lib",
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "types": [],
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false
   },
   "include": [
-    "**/*.spec.ts",
-    "**/*.d.ts"
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "**/*.spec.ts"
   ],
   "angularCompilerOptions": {
     "extendedDiagnostics": {
