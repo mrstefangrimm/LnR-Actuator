@@ -1,19 +1,21 @@
 import { Component, ViewChild, ElementRef, OnInit, OnDestroy, AfterViewInit, ChangeDetectionStrategy } from '@angular/core'
+//import { Component, ViewChild, ElementRef, OnInit, OnDestroy } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
 import { LnrEngine3dService } from './lnrengine3d.service'
 import { LnrService } from './lnr.service'
 import { Vector3 } from 'three'
 import {NgOptimizedImage} from '@angular/common';
-
+//import { OverlaybuttonClickArgs } from '../../projects/overlaybutton/src/public-api'
+import { OverlaybuttonComponent, OverlaybuttonClickArgs } from 'overlaybutton'
 
 @Component({
     selector: 'app-root',
-  imports: [RouterOutlet, NgOptimizedImage],
+  imports: [RouterOutlet, NgOptimizedImage, OverlaybuttonComponent],
     templateUrl: './app.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
+export class AppComponent implements OnInit, OnDestroy {
 
   @ViewChild('rendererCanvas', { static: true })
   rendererCanvas: ElementRef<HTMLCanvasElement>
@@ -34,19 +36,9 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
     this.engine3d.animate()
   }
 
-  ngAfterViewInit(): void {
-    console.info(AppComponent.name, "ngAfterViewInit")
-  }
-
   ngOnDestroy(): void {
     console.info(AppComponent.name, "ngOnDestroy")
     this.engine3d.ngOnDestroy()
-  }
-
-  onOverlayButtonClick(args: OverlaybuttonClickArgs): void {
-    console.info(AppComponent.name, "onOverlayButtonClick", args.open)
-
-    this.context.visiblitiesOpen = args.open
   }
  
   onLngChanged(event) {
@@ -90,6 +82,12 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
     this.engine3d.groupRotationWood.setRtn(rtn)
     this.engine3d.groupRotationBlue.setRtn(rtn)
     this.engine3d.groupRotationSilver.setRtn(rtn)
+  }
+
+  onOverlayButtonClick(args: OverlaybuttonClickArgs): void {
+    console.info(AppComponent.name, "onOverlayButtonClick", args.open)
+
+    this.context.visibilitiesOpen = args.open
   }
 
   onTransparentChecked() {

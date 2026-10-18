@@ -35,5 +35,13 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "references": [
+    {
+      "path": "./projects/overlaybutton/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/overlaybutton/tsconfig.spec.json"
+    }
+  ]
 }
