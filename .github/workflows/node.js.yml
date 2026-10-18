@@ -1,0 +1,39 @@
+name: NPM build and test
+
+on:
+  push:
+    paths:
+      - 'Software/lnr/**'
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [24.x]
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: 'Software/lnr/package-lock.json'
+
+    - working-directory: Software/lnr
+      run: npm ci
+
+    - working-directory: Software/lnr
+      run: npm run build threeobject --if-present && npm run build --if-present
+
+    - working-directory: Software/lnr
+      run: npm test threeobject && npm test
+
