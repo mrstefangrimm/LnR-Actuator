@@ -1,4 +1,5 @@
 [![NPM build and test](https://github.com/mrstefangrimm/LnR-Actuator/actions/workflows/node.js.yml/badge.svg)](https://github.com/mrstefangrimm/LnR-Actuator/actions/workflows/node.js.yml)
+[![Docker build and push](https://github.com/mrstefangrimm/LnR-Actuator/actions/workflows/docker-image.yml/badge.svg)](https://github.com/mrstefangrimm/LnR-Actuator/actions/workflows/docker-image.yml)
 
 # LnR-Actuator
 The linear and rotary (LnR) actuator is a electromechanical device that allows linear as well as rotary motion of the shaft.
