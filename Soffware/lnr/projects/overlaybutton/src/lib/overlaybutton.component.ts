@@ -38,6 +38,7 @@ import { NgIf } from '@angular/common'
       background-color: #fff;
       width: 100%;
       height: 100%;
+      left: 0;
       position: absolute;
       border-radius: 50%;
       transform: scale(1);

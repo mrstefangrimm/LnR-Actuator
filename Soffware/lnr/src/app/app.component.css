@@ -1,36 +1,35 @@
-
 * {
     box-sizing: border-box;
   }
   
-.content {
-    float: left;
-    width: 80%;
-    border: solid thin gray;
-  }
+.renderer {
+  float: left;
+  width: 80%;
+  border: solid thin gray;
+}
 
-  .navigation {
-    float: right;
-    width: 20%;
-    height: 20%;
-    text-align: center;
-  }
+.controls {
+  float: right;
+  width: 20%;
+  height: 20%;
+  text-align: center;
+}
 
-  .license {
-    float: left;
-    height: 10%;
-  }
+.license {
+  float: left;
+  height: 10%;
+}
 
-  .menu-items {
-    background-color: #fff;
-    position: absolute;
-    top: 50px;
-    left: 20px;
-  }
+.menu-items {
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
 
-  @media only screen and (max-width: 620px) {
-    /* For mobile phones: */ 
-   .content, .navigation, .license {
-      width: 100%;
-    }
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */ 
+ .renderer, .controls, .license {
+    width: 100%;
   }
+}
