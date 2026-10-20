@@ -1,27 +1,27 @@
-import { NgIf } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'lib-overlaybutton',
   standalone: true,
-  imports: [NgIf],
+  imports: [],
   template: `
     <div class="menu">
       <span class="menu-circle"></span>
       <div class="menu-button"
            (click)="onButtonClick()">
-        <span class="menu-icon"
-              *ngIf="!open">
+        @if (!open) {
+          <span class="menu-icon">
           <span class="menu-line"></span>
           <span class="menu-line menu-line-2"></span>
           <span class="menu-line menu-line-3"></span>
-        </span>
-        <span class="menu-icon"
-              *ngIf="open">
+          </span>
+        } @else {
+          <span class="menu-icon">
           <span class="menu-line menu-open-1"></span>
           <span class="menu-line menu-line-2 menu-open-2"></span>
           <span class="menu-line menu-line-3 menu-open-3"></span>
-        </span>
+          </span>
+        }
       </div>
     </div>
   `,
@@ -103,6 +103,6 @@ export class OverlaybuttonComponent {
 }
 
 export class OverlaybuttonClickArgs {
-  constructor(public open: boolean) {    
+  constructor(public open: boolean) {
   }
 }

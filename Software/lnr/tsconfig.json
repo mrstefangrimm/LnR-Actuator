@@ -1,8 +1,15 @@
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
   "compileOnSave": false,
   "compilerOptions": {
+    "composite": true,
     "outDir": "./dist/out-tsc",
     "strict": true,
     "strictNullChecks": false,
@@ -30,18 +37,12 @@
       ]
     }
   },
-  "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true
-  },
   "references": [
     {
       "path": "./projects/overlaybutton/tsconfig.lib.json"
     },
     {
-      "path": "./projects/overlaybutton/tsconfig.spec.json"
+      "path": "./projects/threeobject/tsconfig.lib.json"
     }
   ]
 }

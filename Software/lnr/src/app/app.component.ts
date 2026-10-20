@@ -4,13 +4,11 @@ import { RouterOutlet } from '@angular/router'
 import { LnrEngine3dService } from './lnrengine3d.service'
 import { LnrService } from './lnr.service'
 import { Vector3 } from 'three'
-import {NgOptimizedImage} from '@angular/common';
-//import { OverlaybuttonClickArgs } from '../../projects/overlaybutton/src/public-api'
-import { OverlaybuttonComponent, OverlaybuttonClickArgs } from 'overlaybutton'
+import { OverlaybuttonComponent, OverlaybuttonClickArgs } from '../../projects/overlaybutton/src/public-api'
 
 @Component({
     selector: 'app-root',
-  imports: [RouterOutlet, NgOptimizedImage, OverlaybuttonComponent],
+    imports: [RouterOutlet, OverlaybuttonComponent],
     templateUrl: './app.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './app.component.css'
@@ -40,7 +38,7 @@ export class AppComponent implements OnInit, OnDestroy {
     console.info(AppComponent.name, "ngOnDestroy")
     this.engine3d.ngOnDestroy()
   }
- 
+
   onLngChanged(event) {
     console.debug(event.value)
 
