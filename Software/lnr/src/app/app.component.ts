@@ -1,5 +1,4 @@
 import { Component, ViewChild, ElementRef, OnInit, OnDestroy, AfterViewInit, ChangeDetectionStrategy } from '@angular/core'
-//import { Component, ViewChild, ElementRef, OnInit, OnDestroy } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
 import { LnrEngine3dService } from './lnrengine3d.service'
 import { LnrService } from './lnr.service'
