@@ -1,14 +1,15 @@
+
 * {
-    box-sizing: border-box;
-  }
-  
-.renderer {
+  box-sizing: border-box;
+}
+
+.content {
   float: left;
   width: 80%;
   border: solid thin gray;
 }
 
-.controls {
+.navigation {
   float: right;
   width: 20%;
   height: 20%;
@@ -28,8 +29,8 @@
 }
 
 @media only screen and (max-width: 620px) {
-  /* For mobile phones: */ 
- .renderer, .controls, .license {
+  /* For mobile phones: */
+  .content, .navigation, .license {
     width: 100%;
   }
 }

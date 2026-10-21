@@ -4,16 +4,16 @@ import { RouterOutlet } from '@angular/router'
 import { LnrEngine3dService } from './lnrengine3d.service'
 import { LnrService } from './lnr.service'
 import { Vector3 } from 'three'
-import { OverlaybuttonComponent, OverlaybuttonClickArgs } from '../../projects/overlaybutton/src/public-api'
+import { Overlaybutton, OverlaybuttonClickArgs } from '../../projects/overlaybutton/src/public-api'
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, OverlaybuttonComponent],
+    imports: [RouterOutlet, Overlaybutton],
     templateUrl: './app.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 
   @ViewChild('rendererCanvas', { static: true })
   rendererCanvas: ElementRef<HTMLCanvasElement>
@@ -32,6 +32,10 @@ export class AppComponent implements OnInit, OnDestroy {
     const size = LnrEngine3dService.calcContentSize()
     this.engine3d.createScene(this.rendererCanvas, size.width, size.height)
     this.engine3d.animate()
+  }
+
+  ngAfterViewInit(): void {
+    console.info(AppComponent.name, "ngAfterViewInit")
   }
 
   ngOnDestroy(): void {
