@@ -27,12 +27,8 @@
     "module": "ES2022",
     "useDefineForClassFields": false,
     "paths": {
-      "overlaybutton": [
-        "./dist/overlaybutton"
-      ],
-      "threeobject": [
-        "./dist/threeobject"
-      ]
+      "threeobject": ["./projects/threeobject/src/public-api"],
+      "overlaybutton": ["./projects/overlaybutton/src/public-api"]
     }
   },
   "references": [

@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router'
 import { LnrEngine3dService } from './lnrengine3d.service'
 import { LnrService } from './lnr.service'
 import { Vector3 } from 'three'
-import { Overlaybutton, OverlaybuttonClickArgs } from '../../projects/overlaybutton/src/public-api'
+import { Overlaybutton, OverlaybuttonClickArgs } from 'overlaybutton'
 
 @Component({
     selector: 'app-root',
