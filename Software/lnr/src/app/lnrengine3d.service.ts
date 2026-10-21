@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { Vector3 } from 'three'
 import { ElementRef, Injectable, NgZone, OnDestroy } from '@angular/core'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
-import { LoadableObject, LoadedObject, NotLoadedObject } from 'threeobject'
+import { LoadableObject, LoadedObject, NotLoadedObject } from '../../projects/threeobject/src/public-api'
 import { Observable } from 'rxjs'
 
 @Injectable({providedIn: 'root'})
